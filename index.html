@@ -1,115 +1,126 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <lang="pt-br">
+    <link rel="stylesheet" href="estilo.css">
     <title>Meu Primeiro Site</title>
+    
 </head>
+
+
 <body>
-    
-        <section>
-
-    <h1>LUCIANE WEBER</h1>
-    <H4>Bem vindos à minha página!</H4>
-    <meta charset="UTF-8">
-
-        
-    </section>
-    
-    
     <section>
       
         <figure>
-            <img src="LucianeWeber.jpeg">
+            <img src="LucianeWeber.jpeg" alt="Descrição da foto" class="foto-redonda">
         </figure>
 
-
-            <h3>Trilha Sonora</h3>
-       <audio autoplay controls muted src="take_away_my_heaven_Aaron_Neville_Naijapals.mp3" > Seu browser não suporta áudio. </audio>
-
-
+    </section>
 
     <section>
-        <h2>Biografia</h2>
+       
+         <h1>LUCIANE WEBER</h1>
+         <h4>Bem vindos à minha página!</h4>
+         <meta charset="UTF-8">
 
-        <p>Formei condutores por 20 anos. Ensinei pessoas nervosas a terem calma no trânsito. Uma lei mudou a minha profissão, mas não mudou a minha vontade de aprender.
-        <br>Sou Luciane, tenho 56 anos e hoje estou aprendendo a programar o futuro. Porque eu acredito que a gente não para de dirigir a própria vida nunca. 
-        <br>Agora estou começando a aprender a criar sites HTML!    
-        </p>
+    </section>
+
+         <h2>Trilha Sonora</h2>
+
+        <div class="player">
+        <span class="titulo">🎵 Trilha sonora</span>
+        <audio src="take_away_my_heaven_Aaron_Neville_Naijapals.mp3" controls loop></audio>
+        
+        </div>
+
+
+
+    <section class="sobre-mim">
+        <h2>Sobre mim</h2>
+
+        <p>Formei condutores por <strong>20 anos</strong>. Ensinei pessoas nervosas a terem calma no trânsito.</p>
+
+        <p>Uma lei mudou a minha profissão, mas não mudou a minha vontade de aprender.</p>
+
+        <p class="destaque">Sou Luciane, tenho 56 anos e hoje estou aprendendo a programar o futuro. Porque eu acredito que a gente não para de dirigir a própria vida nunca.</p>
+
+        <p>Agora estou começando a aprender a criar sites com HTML!</p>
 
         <p>Aqui está um pouco do que aprendí: <a href="https://github.com/Luciane-Weber?tab=repositories">clique aqui</a></p>
     </section>
 
-    <section>
-        <h2>Meu hobbies</h2>
-        <h3>Lista de itens</h3>
 
+
+    <section class="caixa-hobbies">
+        <h2>Meus hobbies</h2>
         <ul>
-            <li>Ouvir música</li>
-            <li>Estudar</li>
-            <li>Ir à praia</li>
-            <li>Curtir minha neta</li>
-            <li>Estar com a família</li>
-            <li>Aprender coisas novas</li>
-
+          <li><span>🎵</span> Ouvir música</li>
+          <li><span>📖</span> Estudar</li>
+          <li><span>🌱</span> Aprender coisas novas</li>
+          <li><span>👨‍👩‍👧</span> Estar com a família</li>
+          <li><span>💗</span> Curtir minha neta</li>
+          <li><span>🏖️</span> Ir à praia</li>
         </ul>
-
     </section>
 
-    <section>
-        <h2>Título da quinta seção</h2>
-        <h3>Formulário</h3>
 
-    <section>
+
+    <section class="filmes">
         <h2>Meus filmes favoritos</h2>
 
         <table>
-            <tr>
-                <th>Filme</th>
-                <th>Ano</th>
-                <th>Porque eu amo esse filme</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Filme</th>
+                    <th>Ano</th>
+                    <th>Por que eu amo esse filme</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <th>Estrelas Além do Tempo
-                <br>(Hidden Figures)</th>
-                <th>2016</th>
-                <th>3 mulheres afro-americanas, programadoras da NASA
-                <br>e ninguém dava valor. Elas tiveram que aprender uma
-                <br>nova linguagem de programação sozinhas.</th>
-            </tr>
-        
+            <tbody>
+                <tr>
+                    <td class="titulo">Estrelas Além do Tempo<br><small>(Hidden Figures)</small></td>
+                    <td class="ano">2016</td>
+                    <td>3 mulheres afro-americanas, programadoras da NASA, e ninguém dava valor. Elas tiveram que aprender uma nova linguagem de programação sozinhas.</td>
+                    <td class="nota">★★★★★</td>
+                </tr>
 
-            <tr>
-                <th>Um Senhor Estagiário
-                <br>(The Intern)</th>
-                <th>2015</th>
-                <th>Um senhor de 70 anos, aposentado, vira estagiário numa
-                <br>empresa de tecnologia cheia de jovens.</th>
-            </tr>
+                <tr>
+                    <td class="titulo">Um Senhor Estagiário<br><small>(The Intern)</small></td>
+                    <td class="ano">2015</td>
+                    <td>Um senhor de 70 anos, aposentado, vira estagiário numa empresa de tecnologia cheia de jovens.</td>
+                    <td class="nota">★★★★★</td>
+                </tr>
 
-             <tr>
-                <th>Joy: O Nome do Sucesso</th>
-                <th>2015</th>
-                <th>Uma mãe que precisou se reinventar, passou por dificuldades
-                <br>e criou um negócio do zero depois dos 40 anos.</th>
-            </tr>
+                <tr>
+                    <td class="titulo">Joy: O Nome do Sucesso</td>
+                    <td class="ano">2015</td>
+                    <td>Uma mãe que precisou se reinventar, passou por dificuldades e criou um negócio do zero depois dos 40 anos.</td>
+                    <td class="nota">★★★★☆</td>
+                </tr>
 
-             <tr>
-                <th>O Jogo da Imitação
-                <br>(The Imitation Game)</th>
-                <th>2014</th>
-                <th>A história de Alan Turing criando o primeiro computador para
-                <br> resolver um problema impossível. É sobre lógica pura.</th>
-            </tr>
+                <tr>
+                    <td class="titulo">O Jogo da Imitação<br><small>(The Imitation Game)</small></td>
+                    <td class="ano">2014</td>
+                    <td>A história de Alan Turing criando o primeiro computador para resolver um problema impossível. É sobre lógica pura.</td>
+                    <td class="nota">★★★★★</td>
+                </tr>
+            </tbody>
         </table>
+    </section>
 
-    <section>
+        <br>
+        <br>
         <br>
         <br>
         <footer>Feito com carinho por Luciane ❤
         <br>Escola de Programação Grace USP</footer>
+        <br>
+        <br>
     </section>
 
 
-</body
+</body>
 </html>
